@@ -1,0 +1,36 @@
+body{
+    background-color: lightblue;
+    color: black;
+}
+
+div{
+    font-size: 20px;
+}
+
+.h2texto{
+    text-decoration: underline;
+    color:white;
+}
+
+title{
+    text-decoration: underline;
+}
+
+.primero{
+    color:navy;
+    font-weight: bold;
+    
+}
+
+.segundo{
+    text-transform: uppercase;
+    text-align: justify;
+}
+
+.tercero{
+    style="font-size: 12px;"
+}
+
+span{
+    font-style: italic ;
+}
