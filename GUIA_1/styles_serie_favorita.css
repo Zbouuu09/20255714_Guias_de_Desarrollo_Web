@@ -1,0 +1,92 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+#portada {
+    background-color: #2e7d32;
+    padding: 20px;
+    text-align: center;
+}
+
+.titulo-principal {
+    font-size: 3em;
+    color: #ffffff;
+}
+
+
+
+.intro {
+    padding: 20px;
+}
+
+.texto-intro {
+    font-size: 1.1em;
+    text-align: justify;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.personajes {
+    padding: 20px;
+    text-align: center;
+}
+
+.personaje {
+    margin-bottom: 30px;
+}
+
+.personaje h3 {
+    color: #66bb6a;
+    font-size: 1.5em;
+}
+
+.foto-personaje {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px auto;
+}
+
+.descripcion {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.datos {
+    padding: 20px;
+    text-align: center;
+}
+
+.tabla-datos {
+    width: 60%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.tabla-datos th,
+.tabla-datos td {
+    border: 1px solid #444;
+    padding: 10px;
+}
+
+.tabla-datos th {
+    background-color: #2e7d32;
+    color: white;
+}
+
+#pie-pagina {
+    background-color: #111;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.texto-pie {
+    font-size: 0.9em;
+    color: #999;
+}
