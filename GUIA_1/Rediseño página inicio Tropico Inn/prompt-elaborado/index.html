@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trópico Inn | Hotel y Centro de Convenciones en San Miguel, El Salvador</title>
+<meta name="description" content="Hotel Trópico Inn, San Miguel. Habitaciones, centro de convenciones, restaurante y piscina. Calidad y buen servicio por tradición desde 1976. Reserve en línea.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<!-- ============ ENCABEZADO ============ -->
+<header class="site-header">
+  <div class="wrap header-inner">
+
+    <a class="brand" href="#inicio">
+      <span class="brand__mark" aria-hidden="true"></span>
+      <span class="brand__text">
+        <strong>Trópico Inn</strong>
+        <em>San Miguel · desde 1976</em>
+      </span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-principal">
+      <span class="nav-toggle__bars" aria-hidden="true"></span>
+      <span class="sr-only">Abrir menú</span>
+    </button>
+
+    <nav class="nav" id="nav-principal" aria-label="Navegación principal">
+      <ul>
+        <li><a href="#habitaciones">Habitaciones</a></li>
+        <li><a href="#promociones">Promociones</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#eventos">Eventos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a class="nav__sister" href="https://tropiclubplaya.com.sv/" target="_blank" rel="noopener">Hotel de playa</a></li>
+      </ul>
+      <a class="btn btn--gold nav__cta" href="#reservar">Reservar ahora</a>
+    </nav>
+
+  </div>
+</header>
+
+<main id="contenido">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="inicio">
+    <img class="hero__img" src="images/hoteles-tropico-inn-imagen-panoramica.jpg"
+         alt="Vista panorámica del Hotel Trópico Inn con su piscina y jardines tropicales al atardecer">
+    <div class="wrap hero__content">
+      <p class="eyebrow">Hotel · Centro de Convenciones · Restaurante</p>
+      <h1>Calidad y buen servicio<br>por tradición</h1>
+      <p class="hero__lead">A la entrada de San Miguel, sobre la carretera Panamericana. Cinco décadas recibiendo viajeros de negocios, turistas y celebraciones.</p>
+      <div class="hero__actions">
+        <a class="btn btn--gold btn--lg" href="#reservar">Reservar ahora</a>
+        <a class="btn btn--ghost btn--lg" href="#habitaciones">Ver habitaciones</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BUSCADOR DE RESERVA ============ -->
+  <section class="booking" id="reservar" aria-labelledby="reservar-titulo">
+    <div class="wrap">
+      <h2 class="sr-only" id="reservar-titulo">Consultar disponibilidad</h2>
+      <form class="booking__form">
+        <div class="field">
+          <label for="entrada">Entrada</label>
+          <input type="date" id="entrada" name="entrada">
+        </div>
+        <div class="field">
+          <label for="salida">Salida</label>
+          <input type="date" id="salida" name="salida">
+        </div>
+        <div class="field">
+          <label for="huespedes">Huéspedes</label>
+          <select id="huespedes" name="huespedes">
+            <option>1 adulto</option>
+            <option selected>2 adultos</option>
+            <option>2 adultos + 1 niño</option>
+            <option>Grupo (5 o más)</option>
+          </select>
+        </div>
+        <button class="btn btn--green" type="submit">Consultar disponibilidad</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ BIENVENIDA ============ -->
+  <section class="welcome" aria-labelledby="bienvenida-titulo">
+    <div class="wrap welcome__grid">
+      <div>
+        <p class="eyebrow eyebrow--dark">Bienvenidos</p>
+        <h2 id="bienvenida-titulo">Un hotel de prestigio en la zona oriental</h2>
+        <p>Fundado en 1976, el Trópico Inn nació con la idea de ofrecer a San Miguel un hotel a la altura de la ciudad. Hoy nuestra casa matriz en la Avenida Roosevelt Sur reúne habitaciones, restaurante, piscina y el centro de convenciones más grande de la zona.</p>
+        <p>Nuestra sucursal en Intipucá, a un kilómetro al oriente de Playa El Cuco, opera como hotel, bar y restaurante frente al mar.</p>
+        <a class="link-arrow" href="#servicios">Conozca nuestros servicios</a>
+      </div>
+      <ul class="stats">
+        <li><strong>1976</strong><span>Año de fundación</span></li>
+        <li><strong>5</strong><span>Niveles de convenciones</span></li>
+        <li><strong>2</strong><span>Destinos: ciudad y playa</span></li>
+        <li><strong>24/7</strong><span>Recepción y seguridad</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ HABITACIONES ============ -->
+  <section class="section" id="habitaciones" aria-labelledby="habitaciones-titulo">
+    <div class="wrap">
+      <div class="section__head">
+        <div>
+          <p class="eyebrow eyebrow--dark">Habitaciones</p>
+          <h2 id="habitaciones-titulo">Descanse como se debe</h2>
+        </div>
+        <p class="section__note">Todas con aire acondicionado, wifi, agua caliente y estacionamiento incluido.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <img src="images/sencilla.png" alt="Habitación sencilla del Trópico Inn con cama matrimonial y escritorio de trabajo">
+          <div class="card__body">
+            <h3>Sencilla</h3>
+            <p>Una cama matrimonial, escritorio y ventana al jardín. Ideal para viaje de negocios.</p>
+            <p class="price">Desde <strong>$55</strong> / noche</p>
+            <a class="link-arrow" href="#reservar">Reservar</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="images/doble.jpg" alt="Habitación doble del Trópico Inn con dos camas y vista hacia la piscina">
+          <div class="card__body">
+            <h3>Doble</h3>
+            <p>Dos camas, sala de estar y vista a la piscina. Pensada para familias y equipos.</p>
+            <p class="price">Desde <strong>$75</strong> / noche</p>
+            <a class="link-arrow" href="#reservar">Reservar</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="images/suite.png" alt="Suite ejecutiva del Trópico Inn con sala independiente y terraza privada">
+          <div class="card__body">
+            <h3>Suite ejecutiva</h3>
+            <p>Sala independiente, terraza privada y servicio de desayuno a la habitación.</p>
+            <p class="price">Desde <strong>$110</strong> / noche</p>
+            <a class="link-arrow" href="#reservar">Reservar</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROMOCIONES ============ -->
+  <section class="section section--cream" id="promociones" aria-labelledby="promociones-titulo">
+    <div class="wrap">
+      <div class="section__head">
+        <div>
+          <p class="eyebrow eyebrow--dark">Promociones</p>
+          <h2 id="promociones-titulo">Vigentes este mes</h2>
+        </div>
+      </div>
+
+      <div class="promos">
+        <article class="promo">
+          <span class="tag">Fin de semana</span>
+          <h3>Escapada tropical</h3>
+          <p>Dos noches, desayuno para dos y acceso libre a la piscina.</p>
+          <p class="price"><strong>$135</strong> total</p>
+          <a class="link-arrow" href="#reservar">Aprovechar</a>
+        </article>
+
+        <article class="promo promo--feature">
+          <span class="tag tag--gold">Corporativo</span>
+          <h3>Tarifa empresa</h3>
+          <p>Descuento por convenio, salida tardía y sala de juntas por hora para viajeros frecuentes de negocios.</p>
+          <p class="price"><strong>−20%</strong> sobre tarifa base</p>
+          <a class="link-arrow link-arrow--light" href="#contacto">Solicitar convenio</a>
+        </article>
+
+        <article class="promo">
+          <span class="tag">Bodas</span>
+          <h3>Paquete celebración</h3>
+          <p>Salón del quinto nivel, montaje, cena y suite para los novios.</p>
+          <p class="price">Cotización <strong>a medida</strong></p>
+          <a class="link-arrow" href="#eventos">Ver eventos</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICIOS ============ -->
+  <section class="section" id="servicios" aria-labelledby="servicios-titulo">
+    <div class="wrap">
+      <div class="section__head">
+        <div>
+          <p class="eyebrow eyebrow--dark">Servicios</p>
+          <h2 id="servicios-titulo">Todo dentro del hotel</h2>
+        </div>
+      </div>
+
+      <ul class="services">
+        <li><h3>Centro de convenciones</h3><p>Salón en el quinto nivel para congresos, seminarios y bodas, con cuatro niveles de estacionamiento.</p></li>
+        <li><h3>Restaurante</h3><p>Cocina salvadoreña e internacional, con servicio de desayuno incluido para huéspedes.</p></li>
+        <li><h3>Bar</h3><p>Ambiente tranquilo para reuniones al final del día, junto al área del rancho.</p></li>
+        <li><h3>Piscina y rancho</h3><p>Área abierta con sombra, ideal para tardes en familia y montajes casuales.</p></li>
+        <li><h3>Estacionamiento vigilado</h3><p>Acceso directo desde la carretera Panamericana, con seguridad las 24 horas.</p></li>
+        <li><h3>Wifi y trabajo</h3><p>Internet en todas las áreas y espacios de trabajo para viajeros de negocios.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ EVENTOS ============ -->
+  <section class="events" id="eventos" aria-labelledby="eventos-titulo">
+    <div class="wrap events__grid">
+      <img src="images/salon-eventos.png" alt="Salón del centro de convenciones Trópico Inn con montaje de mesas redondas para una boda">
+      <div class="events__text">
+        <p class="eyebrow">Eventos</p>
+        <h2 id="eventos-titulo">Su celebración, en el salón más grande de San Miguel</h2>
+        <p>Bodas, congresos, seminarios y graduaciones. Coordinamos montaje, menú y hospedaje para sus invitados en un solo lugar.</p>
+        <a class="btn btn--gold" href="#contacto">Cotizar un evento</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ PIE DE PÁGINA ============ -->
+<footer class="site-footer" id="contacto">
+  <div class="wrap footer__grid">
+
+    <div>
+      <p class="footer__brand">Trópico Inn</p>
+      <p class="footer__tagline">Calidad y buen servicio por tradición.</p>
+      <ul class="social" aria-label="Redes sociales">
+        <li><a href="https://www.facebook.com/tropicoinn" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://www.instagram.com/tropicoinn/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.youtube.com/user/hoteltropicoinn" target="_blank" rel="noopener">YouTube</a></li>
+        <li><a href="https://www.tripadvisor.com.mx/Hotel_Review-g608640-d7034131-Reviews-Hoteles_Tropico_inn-San_Miguel_San_Miguel_Department.html" target="_blank" rel="noopener">TripAdvisor</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h2>Casa matriz</h2>
+      <address>
+        Avenida Roosevelt Sur #303<br>
+        San Miguel, El Salvador<br>
+        <a href="tel:+50326810400">+503 2681 0400</a><br>
+        <a href="mailto:info@tropicoinn.com.sv">info@tropicoinn.com.sv</a>
+      </address>
+    </div>
+
+    <div>
+      <h2>Sucursal de playa</h2>
+      <address>
+        Intipucá, 1 km al oriente de Playa El Cuco<br>
+        La Unión, El Salvador<br>
+        <a href="https://tropiclubplaya.com.sv/" target="_blank" rel="noopener">tropiclubplaya.com.sv</a>
+      </address>
+    </div>
+
+    <div>
+      <h2>Enlaces</h2>
+      <ul class="footer__links">
+        <li><a href="#habitaciones">Habitaciones</a></li>
+        <li><a href="#promociones">Promociones</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#eventos">Eventos y convenciones</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="wrap footer__bottom">
+    <p>© 2026 Hoteles Trópico Inn · Sociedad Turística de Oriente, S.A. de C.V.</p>
+    <p><a href="#inicio">Volver arriba</a></p>
+  </div>
+</footer>
+
+<script>
+  // Menú móvil: alterna la navegación y el estado accesible del botón.
+  var toggle = document.querySelector('.nav-toggle');
+  var nav = document.getElementById('nav-principal');
+  toggle.addEventListener('click', function () {
+    var open = nav.classList.toggle('is-open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.addEventListener('click', function (e) {
+    if (e.target.tagName === 'A') {
+      nav.classList.remove('is-open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+</script>
+
+</body>
+</html>
