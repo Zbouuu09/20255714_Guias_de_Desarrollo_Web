@@ -1,0 +1,70 @@
+PROMPTS DEL RETO IA - GUIA 2
+Victor Quijada - Carnet 20255714
+Herramienta utilizada: Codex
+
+
+Referencia de diseño: Hyer Aviation - Refero Styles
+https://styles.refero.design/style/f61cf515-ccd5-4494-bdd1-be9fe4d7258c
+
+======================================================================
+PROMPT 1: PAGINA DE INICIO - inicio.html
+======================================================================
+
+Rediseña la página de inicio de Trópico Inn que trabajé en la Guía 1.
+Utiliza el archivo design.md adjunto como referencia para los colores,
+la tipografía, el espaciado y los componentes. Adapta ese estilo al hotel
+salvadoreño, conservando las imágenes del proyecto anterior.
+
+Incluye una presentación del hotel, una fotografía panorámica, secciones
+de servicios y eventos, y enlaces hacia habitaciones.html y contacto.html.
+Usa HTML semántico y una hoja de estilos externa compartida llamada
+css/site.css.
+
+Mantén una presentación adaptable a celulares. Incorpora una animación
+de aparición con opacidad y desplazamiento vertical, cuya duración pueda
+cambiarse mediante la variable --duracion-entrada. Añade transiciones
+a los botones y respeta la preferencia de movimiento reducido.
+
+
+
+======================================================================
+PROMPT 2: PAGINA DE HABITACIONES - habitaciones.html
+======================================================================
+
+Crea habitaciones.html para el rediseño académico de Trópico Inn.
+
+Presenta tres opciones: Sencilla, Doble y Suite ejecutiva. Utiliza las
+fotografías correspondientes del proyecto anterior y agrega descripciones
+breves. No inventes tarifas vigentes, disponibilidad ni características
+que no estén confirmadas.
+
+Cada habitación debe tener un enlace hacia contacto.html que indique
+la opción elegida mediante un parámetro en la dirección, por ejemplo
+contacto.html?habitacion=Doble.
+
+Incluye navegación funcional entre Inicio, Habitaciones y Contacto.
+Utiliza HTML semántico, textos alternativos, diseño adaptable a celulares
+y la misma animación de entrada del inicio.
+
+======================================================================
+PROMPT 3: PAGINA DE CONTACTO - contacto.html
+======================================================================
+
+Crea contacto.html para el sitio académico de Trópico Inn.
+Incluye un formulario con nombre, correo electrónico, opción de interés
+y mensaje. Agrega etiquetas visibles, campos obligatorios y validación
+del correo.
+
+Implementa en js/site.js la selección automática de la habitación
+indicada en la dirección. Al pulsar "Generar resumen", muestra los datos
+dentro de la página sin recargarla. Añade un botón "Limpiar" que
+restablezca el formulario y oculte el resumen.
+
+Aclara que el formulario es una demostración local: no envía datos,
+no guarda información y no confirma reservas. Incluye un enlace al sitio
+oficial del hotel y adapta la página a dispositivos móviles.
+
+======================================================================
+
+======================================================================
+

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trópico Inn | Contacto</title>
+    <link rel="stylesheet" href="css/site.css">
+    <meta name="description"
+        content="Rediseño académico de Trópico Inn, hotel en San Miguel, El Salvador. Guía 2 de Victor Quijada.">
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+</head>
+
+<body>
+    <a class="skip" href="#contenido">Saltar al contenido</a>
+    <header class="site-header">
+        <div class="wrap header-inner"><a href="inicio.html" class="brand">trópico inn<small>Hotel · San
+                    Miguel</small></a>
+            <nav aria-label="Navegación principal"><a href="inicio.html">Inicio</a><a
+                    href="habitaciones.html">Habitaciones</a><a href="contacto.html" aria-current="page">Contacto</a>
+            </nav>
+        </div>
+    </header>
+    <main id="contenido">
+        <section class="page-intro wrap entrada">
+            <p class="eyebrow">Contacto</p>
+            <h1>Tu próxima<br>estancia empieza aquí.</h1>
+            <p>Organiza los detalles de tu consulta antes de comunicarte con el hotel.</p>
+        </section>
+        <section class="section wrap contact-layout">
+            <aside>
+                <h2>Conversemos.</h2>
+                <p>San Miguel, El Salvador.</p>
+                <p>Para confirmar servicios, tarifas o disponibilidad, utiliza los canales del sitio oficial.</p><a
+                    class="btn outline" href="https://tropicoinn.com.sv/">Ir al sitio oficial</a>
+                <div class="feature" style="margin-top:35px">
+                    <h3>¿Un evento?</h3>
+                    <p>Incluye la fecha aproximada, el tipo de encuentro y la cantidad de asistentes.</p>
+                </div>
+            </aside>
+            <div>
+                <form id="consulta">
+                    <div class="form-grid">
+                        <div class="field"><label for="nombre">Nombre</label><input id="nombre" name="nombre"
+                                autocomplete="name" required maxlength="100"></div>
+                        <div class="field"><label for="correo">Correo electrónico</label><input id="correo"
+                                name="correo" type="email" autocomplete="email" required maxlength="150"></div>
+                        <div class="field full"><label for="habitacion">Me interesa</label><select id="habitacion"
+                                name="habitacion">
+                                <option>Sencilla</option>
+                                <option>Doble</option>
+                                <option>Suite ejecutiva</option>
+                                <option>Eventos</option>
+                                <option>Información general</option>
+                            </select></div>
+                        <div class="field full"><label for="mensaje">Cuéntanos sobre tu visita</label><textarea
+                                id="mensaje" name="mensaje" rows="5" required minlength="10" maxlength="2000"
+                                placeholder="Fechas aproximadas, número de personas y tu consulta."></textarea></div>
+                    </div>
+                    <p class="form-note">Demostración académica: el formulario genera un resumen local. No envía datos,
+                        no guarda información y no confirma reservas.</p>
+                    <div class="actions"><button class="btn" type="submit">Generar resumen</button><button
+                            class="btn outline" type="reset">Limpiar</button></div>
+                </form>
+                <section class="result" id="resultado" hidden tabindex="-1" aria-live="polite">
+                    <h3>Tu consulta está preparada</h3>
+                    <p id="resumen"></p>
+                    <p class="form-note">No se ha enviado. Puedes copiar este texto y utilizarlo en el canal oficial del
+                        hotel.</p>
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="wrap">
+            <div class="footer-main">
+                <div>
+                    <h2>Nos vemos<br>en San Miguel.</h2>
+                    <p>Hotel · Restaurante · Centro de convenciones</p>
+                </div>
+                <div>
+                    <p><a href="inicio.html">Inicio</a> · <a href="habitaciones.html">Habitaciones</a> · <a
+                            href="contacto.html">Contacto</a></p>
+                    <p><a href="https://tropicoinn.com.sv/">Consultar el sitio oficial</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom"><span>Proyecto académico · Victor Quijada · 20255714</span><span><a
+                        href="../../index.html">Guía 2</a> · Rediseño no oficial. No procesa reservas.</span></div>
+        </div>
+    </footer>
+    <script src="js/site.js"></script>
+</body>
+
+</html>
