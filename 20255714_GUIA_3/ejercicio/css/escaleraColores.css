@@ -1,0 +1,58 @@
+.escalera {
+    position: relative;
+    width: 138px;
+    height: 164px;
+    margin: 40px 0 40px 100px;
+}
+
+.escalera > div {
+    position: absolute;
+    width: 70px;
+    height: 96px;
+    border: 2px solid black;
+    background-color: white;
+}
+
+.escalera img {
+    display: block;
+    width: 70px;
+    height: 96px;
+}
+
+#diez_de_diamantes {
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#sota_de_diamantes {
+    top: 16px;
+    left: 16px;
+    z-index: 2;
+}
+
+#reina_de_diamantes {
+    top: 32px;
+    left: 32px;
+    z-index: 3;
+}
+
+#rey_de_diamantes {
+    top: 48px;
+    left: 48px;
+    z-index: 4;
+}
+
+#as_de_diamantes {
+    top: 64px;
+    left: 64px;
+    z-index: 5;
+}
+
+nav {
+    font: 14px Arial, sans-serif;
+}
+
+nav a {
+    color: #0645ad;
+}
