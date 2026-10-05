@@ -1,0 +1,23 @@
+Genera la primera versión del Reto IA Guía 3 de Victor Quijada 20255714.
+Usuario autorizó explícitamente subagente GPT-6 Astra Light (gpt-6-astra low) dentro Codex,
+entrega solo local ZIP 
+Trabaja SOLO en C:/Users/tec5r/Documents/Codex/2026-09-17/co/work/guia3/generado_astra.
+Referencia actual copiada en C:/Users/tec5r/Documents/Codex/2026-09-17/co/work/guia3/referencia_guia2 (inicio.html, habitaciones.html, contacto.html, css/site.css, js/site.js, img).
+Lee esos archivos relevantes. Requisito PDF: nueva versión del INICIO mismo sitio salvadoreño Trópico Inn, conserva temática contenido esencial navegación e identidad.
+CSS GRID debe construir distribución PRINCIPAL de página (no solo cards/galería), HTML y CSS separados.
+Flexbox permitido menú/botones. Evidencias: instrucción exacta enviada, código originalmente generado, final corregido, lista cambios; coordinador conservará tu salida inmutable y hará QA/correcciones.
+Tu alcance: genera sitio completo usable local con inicio.html nuevo, css/inicio-grid.css documentado, reutiliza css/site.css y img y otras páginas de referencia, ajusta enlaces de todas a inicio.html; 
+elimina links fuera del paquete como ../../index.html, cambia referencia guía2 a guía3 solo etiquetas/meta/footer. Mantén contenido habitaciones/contacto y comportamiento formulario, sin backend.
+Añade index.html entrada alias que lleve a inicio.html para GitHub Pages futuro (sin duplicar inicio si puedes meta refresh con enlace fallback).
+El diseño debe mantener Inter, tinta #000d10, blanco, terracota #bc7155, botones píldora, fotos locales; ninguna imagen nueva ni precios inventados.
+Main .inicio-grid con grid-template-columns minmax(0,1fr) minmax(0,1fr) o proporciones pensadas;
+grid-template-areas explícitas con elementos DIRECTOS que sean secciones principales (presentación, fotografía, bienvenida, servicios, imagen eventos, texto eventos). Ancho máximo1200, main 90%, gap/filas legibles.
+Header/footer pueden además layout grid si razonable. Hacer estructura visiblemente nueva del inicio y responsive 1 columna <=760px, sin desbordes 320px. Evita texto técnico de Grid en página del hotel, no añade panel demostración ni controles académicos. Comentarios CSS en español que expliquen contenedor/items/fr/gap/areas/media;
+incluye una propiedad fácil editar en video (gap:24px ->48px o grid-template-columns 1fr 1fr ->2fr 1fr).
+Elige buena composición editorial con fotos existentes y h1 legible sin romper palabras.
+Organiza HTML con indentación para estudiante.
+Tu resultado necesita solo código primera generación y una nota breve de lo implementado.
+No inventes errores iniciales; si no hay errores, coordinador documentará mejoras reales de QA.
+Guarda también prompt_recibido.txt con esta instrucción íntegra para evidencia exacta.
+Reporta archivos y reglas grid clave al terminar.
+No modificar originales ni outputs ni skills Sites (es proyecto web existente de asignatura).

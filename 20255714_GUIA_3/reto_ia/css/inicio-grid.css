@@ -1,0 +1,173 @@
+/* Trópico Inn · Guía 3 · Distribución principal de la página de inicio.
+   site.css conserva la identidad, tipografía, botones y estilos compartidos. */
+
+/* Contenedor Grid principal: sus seis hijos directos son las secciones
+   y fotografías de la página, no solamente tarjetas dentro de una sección.
+   Cada fr reparte el espacio disponible en partes iguales. minmax(0, 1fr)
+   permite reducir cada columna sin que el contenido imponga un ancho mayor.
+   Para el video: cambiar gap: 24px por gap: 48px y observar la separación. */
+.inicio-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    /* Las filas se crean a partir de las áreas y se ajustan al contenido. */
+    grid-auto-rows: auto;
+    grid-template-areas:
+        "presentacion fotografia"
+        "bienvenida servicios"
+        "imagen-eventos texto-eventos";
+    gap: 24px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 48px auto 80px;
+    align-items: stretch;
+}
+
+/* Los items se asignan a las áreas nombradas; cada fila crece con su contenido. */
+.inicio-grid > * {
+    min-width: 0;
+    margin: 0;
+}
+
+.presentacion { grid-area: presentacion; }
+.fotografia { grid-area: fotografia; }
+.bienvenida { grid-area: bienvenida; }
+.servicios { grid-area: servicios; }
+.imagen-eventos { grid-area: imagen-eventos; }
+.texto-eventos { grid-area: texto-eventos; }
+
+.presentacion {
+    padding: 40px 24px 48px 0;
+    align-self: center;
+}
+
+.presentacion h1 {
+    font-size: clamp(46px, 6.6vw, 88px);
+    line-height: 1.02;
+    letter-spacing: -.055em;
+}
+
+.presentacion > p:not(.eyebrow) {
+    max-width: 430px;
+    margin-block: 28px;
+    color: var(--muted);
+}
+
+/* Grid también mantiene el pie de foto debajo de la imagen y deja que
+   la fotografía complete el alto de su sección sin deformarse. */
+.fotografia,
+.imagen-eventos {
+    display: grid;
+    grid-template-rows: minmax(0, 1fr) auto;
+    background: #f2ede9;
+}
+
+.fotografia img,
+.imagen-eventos img {
+    width: 100%;
+    height: 100%;
+    min-height: 360px;
+    object-fit: cover;
+}
+
+.fotografia img {
+    object-position: 52% center;
+}
+
+.inicio-grid figcaption {
+    padding: 12px 18px;
+    font-size: 12px;
+    color: var(--muted);
+}
+
+.bienvenida,
+.servicios,
+.texto-eventos {
+    padding: clamp(24px, 3.5vw, 48px);
+}
+
+.inicio-grid h2 {
+    font-size: clamp(32px, 3.5vw, 48px);
+    max-width: 440px;
+}
+
+.bienvenida {
+    background: var(--clay);
+    align-content: center;
+}
+
+.servicios {
+    background: var(--ink);
+    color: var(--paper);
+}
+
+.lista-servicios {
+    margin-top: 30px;
+}
+
+.lista-servicios article {
+    border-top: 1px solid #536065;
+    padding-block: 18px;
+}
+
+.lista-servicios article:last-child {
+    padding-bottom: 0;
+}
+
+.lista-servicios h3 {
+    font-size: 25px;
+}
+
+.lista-servicios p {
+    margin: 10px 0;
+    color: #d3d9db;
+    font-size: 15px;
+}
+
+.lista-servicios a {
+    font-size: 14px;
+}
+
+.texto-eventos {
+    align-content: center;
+    border: 1px solid var(--line);
+}
+
+.texto-eventos p:not(.eyebrow) {
+    color: var(--muted);
+}
+
+/* La media query recompone toda la página en una columna. Las áreas
+   mantienen el orden de lectura del HTML y gap separa filas y columnas. */
+@media (max-width: 760px) {
+    .inicio-grid {
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-areas:
+            "presentacion"
+            "fotografia"
+            "bienvenida"
+            "servicios"
+            "imagen-eventos"
+            "texto-eventos";
+        margin-top: 24px;
+        margin-bottom: 48px;
+    }
+
+    .presentacion {
+        padding: 16px 0 12px;
+    }
+
+    .presentacion h1 {
+        font-size: clamp(46px, 10vw, 72px);
+    }
+
+    .fotografia img,
+    .imagen-eventos img {
+        height: 300px;
+        min-height: 0;
+    }
+
+    .inicio-grid .btn {
+        max-width: 100%;
+        text-align: center;
+    }
+}
